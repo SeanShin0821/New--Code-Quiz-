@@ -11,14 +11,28 @@
 
    <body>
        <div class="container">
+
+           <div id = "initial page">
            <h2 style="text-align: center;">This quiz will be testing your knowledge 
             regarding the code elements and the computer components!</h2>
 
             <button id = "startbtn"> Let's begin the Code QUIZ!</button>
             <button id = "Highscorebtn">Click here to view the high score!</button>
+           </div>
+
+        <div id= "QUIZ start">
+            <div id="timer">Time left: </div>
+            <div id="question placeholder"><h1>Questions</h1></div>
+                <button id="A" onclick="checkAnswer('a')">A</button>
+                <button id="B" onclick="checkAnswer('b')">B</button>
+                <button id="C" onclick="checkAnswer('c')">C</button>
+                <button id="D" onclick="checkAnswer('d')">D</button>
+            <div id="result"></div>
+    </div>
+    <div id="gameover">
 
 
-           </div>>
+           </div>
 
 
 
