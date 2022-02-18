@@ -58,7 +58,37 @@ button {
 }
 
 
+#score-page{
+    display: none;
+    width: 50%;
+    border: solid;
+    border-color: silver;
+    padding-bottom: .3rem;
+    background: lightsteelblue;
+}
 
+#highscore-header{
+    display:flex;
+    justify-content: space-around;
+    border-bottom-style: outset;
+    margin-bottom: .5rem;
+    background-color: #5e6df1;
+    color: #eeeeee;
+}
+
+#score-container{
+    height: 100%;
+    width: 100%;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+#initials{
+    margin: .5rem;
+    height: 1.75rem;
+}
 
 #Highscore-Init{
     display: inline-block;
