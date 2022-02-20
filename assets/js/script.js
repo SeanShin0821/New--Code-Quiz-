@@ -13,7 +13,7 @@ var buttonC = document.getElementById("C");
 var buttonD = document.getElementById("D");
 
 
-//Quiz Questions and Answer 
+//Quiz Questions and Answer for code and computer 
 var quizQuestions = 
 [ {
             question: "What does HTML stand for ?",
@@ -53,9 +53,13 @@ var quizQuestions =
 
 ];
 
-
-
-
+//Global variable declaration 
+var currentQuestionIndex = 0; 
+var timeLeft = 60; 
+var timerInterval; 
+var score = 0;
+var correct; 
+var finalQuestionIndex = quizQuestions.length;
 
 
 
