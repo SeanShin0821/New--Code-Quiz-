@@ -73,6 +73,23 @@ var correct;
 var finalQuestionIndex = quizQuestions.length;
 
 
+
+
+내일 해야할거 !!! 
+
+이메일 답장 부터 하기 
+두분 이메일 
+에세이 고치기 
+저거 내기 과제 데드라인 확인 
+
+오전 끝 
+
+
+
+
+
+
+
 //For timer 
 timerInterval = setInterval(function(){
     timeLeft--;
