@@ -1,5 +1,15 @@
 //Declaring var for manipulation 
-
+var init = document.getElementById("initial-page"); 
+var QUIZtimer = document.getElementById("timer"); 
+var startQuizButton = document.getElementById("startbtn"); 
+var HIghscoreButton = document.getElementById("Highscorebtn"); 
+var init = document.getElementById("initial-page"); 
+var init = document.getElementById("initial-page"); 
+var init = document.getElementById("initial-page"); 
+var init = document.getElementById("initial-page"); 
+var init = document.getElementById("initial-page"); 
+var init = document.getElementById("initial-page"); 
+var highscoreinput = document.getElementById("initial-page"); 
 
 
 
