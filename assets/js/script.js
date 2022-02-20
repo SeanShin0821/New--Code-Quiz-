@@ -12,7 +12,7 @@ var FinalSCORE = document.getElementById("FinalScore");
 var FinalSCOREinitials = document.getElementById("initials"); 
 var SubmitButton = document.getElementById("SubBtn"); 
 var SCOREcontainer = document.getElementById("score-container"); 
-var ScorePage= document.getElementById("initial-page"); 
+var ScorePage= document.getElementById("score-page"); 
 var Highscoreheader = document.getElementById("highscore-header"); 
 var EndGame = document.getElementById("endgameBtn"); 
 var ReplayButton = document.getElementById("Replay"); 
@@ -93,6 +93,37 @@ function showScore(){
     FinalSCOREinitials.value = "";
     FinalSCORE.innerHTML = "Your score is" +quizQuestions.length ; 
 }
+
+// run the function highscore to save and push from the local storage
+ SubmitButton.addEventListener("click",function Highscore(){
+//Equals in nave and value
+    if(FinalSCOREinitials.value === "") {
+        alert("Initials may not be blank at all times");
+        return false;
+    } else {
+        var savedHighscores = JSON.parse(localStorage.getItem("saved-Highscores")) || [];   
+        var currentUser = FinalSCOREinitials.value.trim();
+        var currentHighscore = {
+            name : currentUser,
+            score : score
+        };
+        GameOverDiv.style.display = "none";
+        SCOREcontainer.style.display = "flex";
+        ScorePageDiv.style.display = "block";
+        EndGame.style.display = "flex";
+        
+        savedHighscores.push(currentHighscore);
+        localStorage.setItem("savedHighscores", JSON.stringify(savedHighscores));
+        generateHighscores();
+
+    }
+    
+});
+
+    
+    
+ 
+
 
 //function for checking the response for each answer 
 
