@@ -1,4 +1,4 @@
-//Declaring var 
+//Declaring var for manipulation 
 
 
 
@@ -80,8 +80,15 @@ function checkanswer(answer){
         //notify user for incorrect
         alert ("This is incorrect")
         currentQuestionIndex++;
-    }
+        generateQuizQuestion();
+        // Will be notifying user when the answer is wrong. 
+    }else{
+        showScore(); 
+    } 
 }
+
+//button for initiation 
+startQuizButton.addeventListener("click", startQuizButton); 
 
 
 
