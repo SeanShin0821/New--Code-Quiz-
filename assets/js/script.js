@@ -3,13 +3,18 @@ var init = document.getElementById("initial-page");
 var QUIZtimer = document.getElementById("timer"); 
 var startQuizButton = document.getElementById("startbtn"); 
 var HIghscoreButton = document.getElementById("Highscorebtn"); 
+var QuizSTART = document.getElementById("QUIZ-start "); 
+var QuestionBox = document.getElementById("question-placeholder"); 
+var RESULT = document.getElementById("result"); 
+var Confirmanswer = document.getElementById("answercheck"); 
+var GameOver = document.getElementById("gameover"); 
+var FinalSCORE = document.getElementById("FinalScore"); 
+var FinalSCOREinitials = document.getElementById("initials"); 
+var SubmitButton = document.getElementById("initial-page"); 
+var init = document.getElementById("SubBtn"); 
 var init = document.getElementById("initial-page"); 
 var init = document.getElementById("initial-page"); 
-var init = document.getElementById("initial-page"); 
-var init = document.getElementById("initial-page"); 
-var init = document.getElementById("initial-page"); 
-var init = document.getElementById("initial-page"); 
-var highscoreinput = document.getElementById("initial-page"); 
+ 
 
 
 
