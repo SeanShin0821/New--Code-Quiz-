@@ -73,6 +73,13 @@ function checkanswer(answer){
         score++; 
         //notify user (alert)
         alert("This is correct")
+        currentQuestionIndex++;
+        generateQuizQuestion();
+        // if the answer is correct notify the user.
+    } else if (answer !== correct && currentQuestionIndex !== finalQuestionIndex){
+        //notify user for incorrect
+        alert ("This is incorrect")
+        currentQuestionIndex++;
     }
 }
 
