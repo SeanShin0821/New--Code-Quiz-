@@ -63,6 +63,21 @@ var finalQuestionIndex = quizQuestions.length;
 
 
 
+//function for checking the response for each answer 
+
+function checkanswer(answer){
+    correct = quizQuestions[currentQuestionIndex].correctAnswer; 
+
+//using if and else if function for loop 
+    if (answer === correct && currentQuestionIndexb !== finalQuestionIndex){
+        score++; 
+        //notify user (alert)
+        alert("This is correct")
+    }
+}
+
+
+
 
 
 
