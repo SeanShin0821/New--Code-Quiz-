@@ -10,11 +10,13 @@ var Confirmanswer = document.getElementById("answercheck");
 var GameOver = document.getElementById("gameover"); 
 var FinalSCORE = document.getElementById("FinalScore"); 
 var FinalSCOREinitials = document.getElementById("initials"); 
-var SubmitButton = document.getElementById("initial-page"); 
-var init = document.getElementById("SubBtn"); 
-var init = document.getElementById("initial-page"); 
-var init = document.getElementById("initial-page"); 
- 
+var SubmitButton = document.getElementById("SubBtn"); 
+var SCOREcontainer = document.getElementById("score-container"); 
+var ScorePage= document.getElementById("initial-page"); 
+var Highscoreheader = document.getElementById("highscore-header"); 
+var EndGame = document.getElementById("endgameBtn"); 
+var ReplayButton = document.getElementById("Replay"); 
+var HighScoreReset = document.getElementById("Highscore-Reset"); 
 
 
 
