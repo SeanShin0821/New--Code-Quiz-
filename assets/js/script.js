@@ -17,12 +17,6 @@ var Highscoreheader = document.getElementById("highscore-header");
 var EndGame = document.getElementById("endgameBtn"); 
 var ReplayButton = document.getElementById("Replay"); 
 var HighScoreReset = document.getElementById("Highscore-Reset"); 
-
-
-
-
-
-
 //Function for buttons 
 var buttonA = document.getElementById("A");
 var buttonB = document.getElementById("B");
@@ -79,6 +73,26 @@ var correct;
 var finalQuestionIndex = quizQuestions.length;
 
 
+//For timer 
+timerInterval = setInterval(function(){
+    timeLeft--;
+    QUIZtimer.textContent="Time left:" +timeLeft;
+
+    if(timeLeft === 0) {
+        clearInterval(timerInterval);
+        showScore();
+    }
+    }, 1000);
+    QuizSTART.style.display = "block"; 
+
+// Function for the end page screen which display your score (timer run out or quiz completion )
+function showScore(){
+    QuizSTART.style.display = "none"
+    GameOverDiv.style.display = "flex"
+    clearInterval(timerInterval);
+    FinalSCOREinitials.value = "";
+    FinalSCORE.innerHTML = "Your score is" +quizQuestions.length ; 
+}
 
 //function for checking the response for each answer 
 
