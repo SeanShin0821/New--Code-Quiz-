@@ -76,6 +76,10 @@ var finalQuestionIndex = quizQuestions.length;
 
 function generateQuizQuestion() {
     GameOverDiv.style.display = "none" ; 
+    if (currentQuestionIndex === finalQuestionIndex){
+        //result show-score 
+        return showScore();
+    }  
 }
 
 
