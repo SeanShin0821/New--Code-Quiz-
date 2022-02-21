@@ -89,17 +89,11 @@ function generateQuizQuestion() {
 
 };
 
-//function for starting the quiz 
+//function for starting the quiz - 
 function startQuizButton ();
     GameOverDiv.style.display = "none"; 
     startQuizDiv.style.display = "none";
     generateQuizQuestion(); 
-
-
-
-
-
-
 
 //For timer 
 timerInterval = setInterval(function(){

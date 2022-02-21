@@ -16,45 +16,12 @@
            <h2 style="text-align: center;">This quiz will be testing your knowledge 
             regarding the code elements and the computer components!</h2>
 
-            <button id = "startbtn"> Let's begin the Code QUIZ!</button>
-            <button id = "Highscorebtn">Click here to view the high score!</button>
+            <button id = "startbtn" a href="./index2.html"> Let's begin the Code QUIZ!</button>
+
+            <button id = "Highscorebtn" onclick="showHighscore()">Click here to view the high score!</button>
            </div>
-
-        <div id= "QUIZ-start">
-            <div id="timer">Time left: </div>
-            <div id="question-placeholder"><h1>Questions</h1></div>
-                <button id="A" onclick="checkAnswer('a')">A</button>
-                <button id="B" onclick="checkAnswer('b')">B</button>
-                <button id="C" onclick="checkAnswer('c')">C</button>
-                <button id="D" onclick="checkAnswer('d')">D</button>
-            <div id="result"></div>
-            <br>
-            <button id ="answercheck">Confirm answer</button>
-    </div>
-    <div id="gameover">
-
-            <div id ="FinalScore"></div>>
-                <input type ="text" size = "30" placeholder="Enter initials for score" name ="initials" id = "initials"/>
-                <button id = "SubBtn">Submit Score here</button>
-           </div>
-
-           <div id = "score-container">
-               <div id = "score-page">
-                   <div id = "highscore-header">
-                       <h2>Initials</h2>
-                       <h1>Score</h1>
-                    </div>
-                        <div id ="HighScore-Init"></div>
-                        <div id ="HighScore-Score"></div>
-                    </div>
-                
-    <div id ="endgameBtn">
-        <button id = "Replay" onclick="replayQUIZ()">Replay</button>
-        <button id = "Highscore-Reset" onclick ="clearSCORE()">Clear High Score</button>
-    </div>
-
-    </div>
-</div>
+        
+     
 
 <script src ="assets/js/script.js"></script>
 
