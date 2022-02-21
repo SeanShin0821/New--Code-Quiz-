@@ -80,8 +80,16 @@ function generateQuizQuestion() {
         //result show-score 
         return showScore();
     }  
-}
+    var currentQuestion = quizQuestions[currentQuestionIndex];
+    questionsEl.innerHTML = "<p>" + currentQuestion + "</p>";
+    buttonA.innerHTML = currentQuestion.choiceA;
+    buttonB.innerHTML = currentQuestion.choiceB;
+    buttonC.innerHTML = currentQuestion.choiceC;
+    buttonD.innerHTML = currentQuestion.choiceD;
 
+};
+
+//function for starting the quiz 
 
 
 
