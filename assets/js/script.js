@@ -23,7 +23,7 @@ var buttonB = document.getElementById("B");
 var buttonC = document.getElementById("C");
 var buttonD = document.getElementById("D");
 
-
+  
 //Quiz Questions and Answer for code and computer 
 var quizQuestions = 
 [ {
@@ -72,17 +72,12 @@ var score = 0;
 var correct; 
 var finalQuestionIndex = quizQuestions.length;
 
+// Function which cycles through the object which contains the quiz questions. 
 
+function generateQuizQuestion() {
+    GameOverDiv.style.display = "none" ; 
+}
 
-
-내일 해야할거 !!! 
-
-이메일 답장 부터 하기 
-두분 이메일 
-에세이 고치기 
-저거 내기 과제 데드라인 확인 
-
-오전 끝 
 
 
 
