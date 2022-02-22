@@ -65,12 +65,14 @@ var quizQuestions =
 ];
 
 //Global variable declaration 
+
+var finalQuestionIndex = quizQuestions.length;
 var currentQuestionIndex = 0; 
-var timeLeft = 60; 
+var timeLeft = 60;     
 var timerInterval; 
 var score = 0;
 var correct; 
-var finalQuestionIndex = quizQuestions.length;
+
 
 // Function which cycles through the object which contains the quiz questions. 
 
@@ -98,17 +100,11 @@ function startQuizButton ();
 //For timer 
 timerInterval = setInterval(function(){
     timeLeft--;
-    QUIZtimer.textContent="Time left:" +timeLeft;
-
-    if(timeLeft === 0) {
-        clearInterval(timerInterval);
-        showScore();
-    }
-    }, 1000);
-    QuizSTART.style.display = "block"; 
-
+    QUIZtimer.textContent= "Time left:" +timeLeft;
+}
+   
 // Function for the end page screen which display your score (timer run out or quiz completion )
-function showScore(){
+,function showScore(){
     QuizSTART.style.display = "none"
     GameOverDiv.style.display = "flex"
     clearInterval(timerInterval);
@@ -116,8 +112,9 @@ function showScore(){
     FinalSCORE.innerHTML = "Your score is" +quizQuestions.length ; 
 }
 
+
 // run the function highscore to save and push from the local storage
- SubmitButton.addEventListener("click",function Highscore(){
+ ,SubmitButton.addEventListener("click",function Highscore(){
 //Equals in nave and value
     if(FinalSCOREinitials.value === "") {
         alert("Initials may not be blank at all times");
@@ -140,7 +137,7 @@ function showScore(){
 
     }
     
-});
+}
 
     
     
@@ -149,7 +146,7 @@ function showScore(){
 
 //function for checking the response for each answer 
 
-function checkanswer(answer){
+,function checkanswer(answer){
     correct = quizQuestions[currentQuestionIndex].correctAnswer; 
 
 //using if and else if function for loop 
@@ -169,22 +166,5 @@ function checkanswer(answer){
     }else{
         showScore(); 
     } 
-}
-
-//button for initiation 
-startQuizButton.addeventListener("click", startQuizButton); 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    return ;}))
+/// update

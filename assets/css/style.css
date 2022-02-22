@@ -57,6 +57,10 @@ button {
     align-items: center;
 }
 
+#timer{
+    color: black;
+    
+}
 
 #score-page{
     display: none;
